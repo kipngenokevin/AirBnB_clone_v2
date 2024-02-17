@@ -15,6 +15,6 @@
 * [Jinja](https://intranet.alxswe.com/rltoken/2y_hunzGCCvSot06EW67UQ)
 
 **Recommended YouTube playlist to get you started**
-![Youtube Playlist](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
 
 ![Airbnb](https://s3.amazonaws.com/intranet-projects-files/concepts/74/hbnb_step3.png)
