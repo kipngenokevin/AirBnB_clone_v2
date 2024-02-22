@@ -70,3 +70,7 @@ class FileStorage:
             if key_to_delete in FileStorage.__objects:
                 del FileStorage.__objects[key_to_delete]
                 self.save()
+
+    def close(self):
+        """call reload() method for deserializing"""
+        self.reload()

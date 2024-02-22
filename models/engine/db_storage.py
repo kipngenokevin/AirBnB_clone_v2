@@ -39,8 +39,6 @@ class DBStorage:
         if env == 'test':
             self.__engine.echo = True  # For debugging purposes
             self.__engine.execute("DROP TABLE IF EXISTS cascade")
-
-
         """Create all tables if not in test environment"""
         if env != 'test':
             Base.metadata.create_all(self.__engine)
@@ -54,8 +52,7 @@ class DBStorage:
         if cls=None, query all types of objects
         this method must return a dictionary: (like FileStorage)
         """
-        my_class = {'State': State, 'City': City
-                }
+        my_class = {'State': State, 'City': City}
         obj_dict = {}
         for class_name, mapped_class in my_class.items():
             if cls is None or cls == mapped_class.__name__:
@@ -84,3 +81,7 @@ class DBStorage:
         self.__session = scoped_session(
                 sessionmaker(bind=self.__engine,
                              expire_on_commit=False))
+
+    def close(self):
+        """call remove() method on the private session attribute"""
+        self.__session.close()
